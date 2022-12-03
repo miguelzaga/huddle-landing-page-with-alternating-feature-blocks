@@ -1,4 +1,7 @@
-import logo from "/src/images/logo.svg"
+import logo from "/src/images/logo.svg";
+import bgHeroMobile from "/src/images/bg-hero-mobile.svg";
+import bgHeroDesktop from "/src/images/bg-hero-desktop.svg";
+import illustrationMockups from "/src/images/illustration-mockups.svg";
 
 function App() {
   return (
@@ -10,16 +13,24 @@ function App() {
       <main className="main">
         <section className="hero">
           <div className="hero__container">
-            <h1>Build The Community Your Fans Will Love</h1>
-            <p>
-              Huddle re-imagines the way we build communities. You have a voice,
-              but so does your audience. Create connections with your users as
-              you engage in genuine discussion.
-            </p>
+            <div className="hero__main">
+              <h1 className="hero__title">
+                Build The Community Your Fans Will Love
+              </h1>
+              <p className="hero__text">
+                Huddle re-imagines the way we build communities. You have a
+                voice, but so does your audience. Create connections with your
+                users as you engage in genuine discussion.
+              </p>
 
-            <button>Get Started For Free</button>
+              <button className="hero__btn btn">Get Started For Free</button>
+            </div>
+            <img className="hero__mockup" alt="Illustration mockup" src={illustrationMockups} />
           </div>
-          <img alt="" src="" />
+          <picture>
+            <source srcSet={bgHeroDesktop} media="(min-width: 1024px)" />
+            <img className="hero__bg" alt="" src={bgHeroMobile} />
+          </picture>
         </section>
         <section className="features">
           <article>

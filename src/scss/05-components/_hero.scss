@@ -1,0 +1,43 @@
+@use "./../01-abstracts/" as *;
+
+.hero {
+  position: relative;
+  background-color: #edfbff;
+  z-index: 0;
+  overflow: hidden;
+
+  &__container {
+    padding: 131px 36px 37px;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  &__title {
+    font-size: rem(24px);
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-size: rem(16px);
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    margin: auto;
+    margin-bottom: 56px;
+  }
+
+  &__mockup {
+    max-height: 209px;
+    max-width: 296px;
+    margin: auto;
+  }
+}

@@ -5,6 +5,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 27px 16px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 
   &__img {
     max-width: 104px;
