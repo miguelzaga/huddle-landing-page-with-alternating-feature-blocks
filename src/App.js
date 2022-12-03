@@ -2,6 +2,9 @@ import logo from "/src/images/logo.svg";
 import bgHeroMobile from "/src/images/bg-hero-mobile.svg";
 import bgHeroDesktop from "/src/images/bg-hero-desktop.svg";
 import illustrationMockups from "/src/images/illustration-mockups.svg";
+import illustrationFlowingConversation from "/src/images/illustration-flowing-conversation.svg";
+import illustrationGrowTogether from "/src/images/illustration-grow-together.svg";
+import illustrationYourUsers from "/src/images/illustration-your-users.svg";
 
 function App() {
   return (
@@ -25,7 +28,11 @@ function App() {
 
               <button className="hero__btn btn">Get Started For Free</button>
             </div>
-            <img className="hero__mockup" alt="Illustration mockup" src={illustrationMockups} />
+            <img
+              className="hero__mockup"
+              alt="Illustration mockup"
+              src={illustrationMockups}
+            />
           </div>
           <picture>
             <source srcSet={bgHeroDesktop} media="(min-width: 1024px)" />
@@ -33,33 +40,51 @@ function App() {
           </picture>
         </section>
         <section className="features">
-          <article>
-            <img alt="" src="" />
-            <h2>Grow Together</h2>
-            <p>
-              Generate meaningful discussions with your audience and build a
-              strong, loyal community. Think of the insightful conversations you
-              miss out on with a feedback form.
-            </p>
+          <article className="features__card">
+            <img
+              className="features__img"
+              alt="Two people standing apart"
+              src={illustrationGrowTogether}
+            />
+            <div className="features__container">
+              <h2 className="features__title">Grow Together</h2>
+              <p className="features__text">
+                Generate meaningful discussions with your audience and build a
+                strong, loyal community. Think of the insightful conversations
+                you miss out on with a feedback form.
+              </p>
+            </div>
           </article>
-          <article>
-            <img alt="" src="" />
-            <h2>Flowing Conversations</h2>
-            <p>
-              You wouldn't paginate a conversation in real life, so why do it
-              online? Our threads have just-in-time loading for a more natural
-              flow.
-            </p>
+          <article className="features__card">
+            <img
+              className="features__img"
+              alt="Four people seated around a table"
+              src={illustrationFlowingConversation}
+            />
+            <div className="features__container">
+              <h2 className="features__title">Flowing Conversations</h2>
+              <p className="features__text">
+                You wouldn't paginate a conversation in real life, so why do it
+                online? Our threads have just-in-time loading for a more natural
+                flow.
+              </p>
+            </div>
           </article>
 
-          <article>
-            <img alt="" src="" />
-            <h2>Your Users</h2>
-            <p>
-              It takes no time at all to integrate Huddle with your app's
-              authentication solution. This means, once signed in to your app,
-              your users can start chatting immediately.
-            </p>
+          <article className="features__card">
+            <img
+              className="features__img"
+              alt="Three people greeting eachother from a distance"
+              src={illustrationYourUsers}
+            />
+            <div className="features__container features__container--users">
+              <h2 className="features__title">Your Users</h2>
+              <p className="features__text">
+                It takes no time at all to integrate Huddle with your app's
+                authentication solution. This means, once signed in to your app,
+                your users can start chatting immediately.
+              </p>
+            </div>
           </article>
         </section>
         <section className="cta">
