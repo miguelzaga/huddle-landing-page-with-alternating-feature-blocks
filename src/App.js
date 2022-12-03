@@ -1,10 +1,10 @@
-import { useState } from "react";
+import logo from "/src/images/logo.svg"
 
 function App() {
   return (
     <div>
       <header className="header">
-        <img alt="" src="" />
+        <img className="header__img" alt="Huddle logo" src={logo} />
         <button className="header__btn">Try It Free</button>
       </header>
       <main className="main">
