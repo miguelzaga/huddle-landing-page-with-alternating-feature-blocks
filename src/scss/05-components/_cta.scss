@@ -1,0 +1,25 @@
+@use "./../01-abstracts/" as *;
+
+.cta {
+  background-color: white;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+  border-radius: 15px;
+  margin: 0 12px;
+  padding: 41px 12px;
+  position: relative;
+  top: 68px;
+
+  &__title {
+    font-size: rem(18px);
+    line-height: 1.67;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__btn {
+    font-size: rem(10px);
+    line-height: 1.5;
+    max-width: 200px;
+    margin: auto;
+  }
+}

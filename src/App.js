@@ -1,4 +1,5 @@
 import logo from "/src/images/logo.svg";
+import logoWhite from "/src/images/logo-white.svg";
 import bgHeroMobile from "/src/images/bg-hero-mobile.svg";
 import bgHeroDesktop from "/src/images/bg-hero-desktop.svg";
 import illustrationMockups from "/src/images/illustration-mockups.svg";
@@ -88,39 +89,42 @@ function App() {
           </article>
         </section>
         <section className="cta">
-          <h2>Ready To Build Your Community?</h2>
-          <button>Get Started For Free</button>
+          <h2 className="cta__title">Ready To Build Your Community?</h2>
+          <button className="cta__btn btn">Get Started For Free</button>
         </section>
       </main>
-      <footer className="footer">
-        <ul>
-          <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </li>
-          <li>+1-543-123-4567</li>
-          <li>example@huddle.com</li>
-        </ul>
-
-        <nav>
+      <div className="bg-alt">
+        <footer className="footer">
+          <img className="footer__img" alt="Huddle logo" src={logoWhite} />
           <ul>
-            <li>About Us</li>
-            <li>What We Do</li>
-            <li>FAQ</li>
-
-            <li>Career</li>
-            <li>Blog</li>
-            <li>Contact Us</li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </li>
+            <li>+1-543-123-4567</li>
+            <li>example@huddle.com</li>
           </ul>
-        </nav>
 
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
-      </footer>
+          <nav>
+            <ul>
+              <li>About Us</li>
+              <li>What We Do</li>
+              <li>FAQ</li>
+
+              <li>Career</li>
+              <li>Blog</li>
+              <li>Contact Us</li>
+            </ul>
+          </nav>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+        </footer>
+      </div>
     </div>
   );
 }

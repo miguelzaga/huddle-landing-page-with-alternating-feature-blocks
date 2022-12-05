@@ -1,7 +1,7 @@
 @use "./../01-abstracts/" as *;
 
 .features {
-  padding: 59px 20px 229px;
+  padding: 59px 20px calc(229px - 176px);
   display: flex;
   flex-direction: column;
   gap: 40px;
