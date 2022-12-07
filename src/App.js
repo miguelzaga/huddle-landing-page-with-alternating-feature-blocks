@@ -96,8 +96,8 @@ function App() {
       <div className="bg-alt">
         <footer className="footer">
           <img className="footer__logo" alt="Huddle logo" src={logoWhite} />
-          <ul className="info">
-            <li className="info__li">
+          <ul className="footer__info">
+            <li className="footer__info-li">
               <svg
                 width="24"
                 height="24"
@@ -110,12 +110,12 @@ function App() {
                   fill="white"
                 />
               </svg>
-              <p className="info__p">
+              <p className="footer__info-p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
               </p>
             </li>
-            <li className="info__li">
+            <li className="footer__info-li">
               <svg
                 width="24"
                 height="24"
@@ -128,9 +128,9 @@ function App() {
                   fill="white"
                 />
               </svg>
-              <p className="info__p">+1-543-123-4567</p>
+              <p className="footer__info-p">+1-543-123-4567</p>
             </li>
-            <li className="info__li">
+            <li className="footer__info-li">
               <svg
                 width="24"
                 height="24"
@@ -143,18 +143,30 @@ function App() {
                   fill="white"
                 />
               </svg>
-              <p className="info__p">example@huddle.com</p>
+              <p className="footer__info-p">example@huddle.com</p>
             </li>
           </ul>
 
-          <ul>
-            <li>About Us</li>
-            <li>What We Do</li>
-            <li>FAQ</li>
+          <ul className="footer__links">
+            <li>
+              <a className="footer__link" href="#">About Us</a>
+            </li>
+            <li>
+              <a className="footer__link" href="#">What We Do</a>
+            </li>
+            <li>
+              <a className="footer__link" href="#">FAQ</a>
+            </li>
 
-            <li>Career</li>
-            <li>Blog</li>
-            <li>Contact Us</li>
+            <li>
+              <a className="footer__link" href="#">Career</a>
+            </li>
+            <li>
+              <a className="footer__link" href="#">Blog</a>
+            </li>
+            <li>
+              <a className="footer__link" href="#">Contact Us</a>
+            </li>
           </ul>
 
           <ul>
