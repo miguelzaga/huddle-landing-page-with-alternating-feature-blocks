@@ -2,6 +2,33 @@
 
 .footer {
   color: white;
-  padding-top: 139px;
-}
+  padding: 139px 21px 46px 16px;
 
+  &__logo {
+    max-width: 167px;
+    margin-bottom: 25px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 41px;
+
+    &__li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 16px;
+      font-size: rem(14px);
+      line-height: 1.71;
+    }
+
+    &__svg {
+      line-height: 1.71;
+      width: initial;
+      min-width: min-content;
+      position: relative;
+      top: 5px;
+    }
+  }
+}

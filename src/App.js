@@ -95,27 +95,67 @@ function App() {
       </main>
       <div className="bg-alt">
         <footer className="footer">
-          <img className="footer__img" alt="Huddle logo" src={logoWhite} />
-          <ul>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+          <img className="footer__logo" alt="Huddle logo" src={logoWhite} />
+          <ul className="info">
+            <li className="info__li">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.1875 3C2.74018 3 0 5.79 0 9.3C0 13.98 6.1875 21 6.1875 21C6.1875 21 12.375 13.98 12.375 9.3C12.375 5.79 9.63482 3 6.1875 3ZM6.1875 11.55C4.95 11.55 3.97768 10.56 3.97768 9.3C3.97768 8.04 4.95 7.05 6.1875 7.05C7.425 7.05 8.39732 8.04 8.39732 9.3C8.39732 10.56 7.425 11.55 6.1875 11.55Z"
+                  fill="white"
+                />
+              </svg>
+              <p className="info__p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
             </li>
-            <li>+1-543-123-4567</li>
-            <li>example@huddle.com</li>
+            <li className="info__li">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 15.5C18.8 15.5 17.6 15.3 16.4 14.9C16.1 14.8 15.7 14.9 15.4 15.1L13.2 17.3C10.4 15.9 8.1 13.5 6.6 10.7L8.8 8.5C9.1 8.2 9.2 7.8 9 7.5C8.7 6.4 8.5 5.2 8.5 4C8.5 3.4 8.1 3 7.5 3H4C3.4 3 3 3.4 3 4C3 13.4 10.6 21 20 21C20.6 21 21 20.6 21 20V16.5C21 15.9 20.6 15.5 20 15.5ZM19 12H21C21 7 17 3 12 3V5C15.9 5 19 8.1 19 12ZM15 12H17C17 9.2 14.8 7 12 7V9C13.7 9 15 10.3 15 12Z"
+                  fill="white"
+                />
+              </svg>
+              <p className="info__p">+1-543-123-4567</p>
+            </li>
+            <li className="info__li">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H18V9.2L12 13L6 9.2V18H4V6H5.2L12 10.2L18.8 6H20V18Z"
+                  fill="white"
+                />
+              </svg>
+              <p className="info__p">example@huddle.com</p>
+            </li>
           </ul>
 
-          <nav>
-            <ul>
-              <li>About Us</li>
-              <li>What We Do</li>
-              <li>FAQ</li>
+          <ul>
+            <li>About Us</li>
+            <li>What We Do</li>
+            <li>FAQ</li>
 
-              <li>Career</li>
-              <li>Blog</li>
-              <li>Contact Us</li>
-            </ul>
-          </nav>
+            <li>Career</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+          </ul>
 
           <ul>
             <li></li>
