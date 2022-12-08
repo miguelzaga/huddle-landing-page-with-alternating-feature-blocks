@@ -63,4 +63,10 @@
       color: $pink;
     }
   }
+
+  &__copyright {
+    text-align: center;
+    font-size: rem(11.1304px);
+    line-height: 17px;
+  }
 }
