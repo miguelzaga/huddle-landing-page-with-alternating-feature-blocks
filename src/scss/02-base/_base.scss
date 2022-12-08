@@ -1,5 +1,14 @@
 @use "./../01-abstracts/" as *;
 
+button,
+a {
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;

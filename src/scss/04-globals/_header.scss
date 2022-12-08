@@ -1,16 +1,27 @@
 @use "./../01-abstracts/" as *;
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 27px 16px;
   position: absolute;
   width: 100%;
   z-index: 1;
 
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 16px;
+    max-width: calc(1280px + 32px);
+    margin: auto;
+    @include breakpoint($lg) {
+      padding-top: 50px;
+    }
+  }
+
   &__img {
     max-width: 104px;
+    @include breakpoint($lg) {
+      max-width: 200px;
+    }
   }
 
   &__btn {
@@ -23,5 +34,17 @@
     min-height: 24px;
     min-width: 96px;
     padding: 4px 0 6px;
+    &:hover {
+      color: $grayishBlue;
+    }
+    @include breakpoint($lg) {
+      font-size: rem(14px);
+      line-height: rem(19px);
+      min-height: 48px;
+      min-width: 200px;
+      padding: 13px 0 16px;
+      box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+      border-radius: 24px;
+    }
   }
 }
