@@ -9,6 +9,19 @@
   &__container {
     padding: 131px 36px 37px;
     text-align: center;
+    max-width: calc(1270px + 72px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 56px;
+    @include breakpoint($lg) {
+      padding-top: 167px;
+      padding-bottom: 72px;
+      flex-direction: row;
+      text-align: left;
+    }
   }
 
   &__bg {
@@ -17,26 +30,48 @@
     z-index: -1;
   }
 
+  &__main {
+    max-width: 520px;
+  }
+
   &__title {
     font-size: rem(24px);
     line-height: 1.5;
     margin-bottom: 24px;
+    @include breakpoint($lg) {
+      font-size: rem(40px);
+      margin-bottom: 32px;
+    }
   }
 
   &__text {
     font-size: rem(16px);
     line-height: 1.5;
     margin-bottom: 32px;
+    @include breakpoint($lg) {
+      font-size: rem(18px);
+    }
   }
 
   &__btn {
+    max-width: 240px;
     margin: auto;
-    margin-bottom: 56px;
+    @include breakpoint($lg) {
+      max-width: 280px;
+      height: 56px;
+      box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
+      border-radius: 28px;
+      margin-left: 0;
+    }
   }
 
   &__mockup {
-    max-height: 209px;
     max-width: 296px;
-    margin: auto;
+    @include breakpoint($md) {
+      max-width: 520px;
+    }
+    @include breakpoint($x-lg) {
+      max-width: 680px;
+    }
   }
 }
