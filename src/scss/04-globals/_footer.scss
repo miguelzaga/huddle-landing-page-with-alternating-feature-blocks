@@ -4,10 +4,33 @@
   color: white;
   padding: 139px 21px 46px 16px;
   font-size: rem(14px);
+  max-width: calc(520px + 21px + 16px);
+  margin: auto;
+  @include breakpoint($lg) {
+    padding: 144px 78px 64px 120px;
+    max-width: calc(1242px + 120px + 78px);
+  }
 
   &__logo {
     max-width: 167px;
     margin-bottom: 25px;
+    @include breakpoint($lg) {
+      max-width: 152px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @include breakpoint($lg) {
+      flex-direction: row;
+      gap: 50px;
+    }
+    @include breakpoint($x-lg) {
+      gap: 130px;
+    }
   }
 
   &__info {
@@ -15,6 +38,11 @@
     flex-direction: column;
     gap: 24px;
     margin-bottom: 41px;
+    @include breakpoint($lg) {
+      gap: 16px;
+      flex-basis: 379px;
+      margin: 0;
+    }
   }
 
   &__info-li {
@@ -26,9 +54,31 @@
 
   &__links {
     line-height: 1.93;
-    display: grid;
-    gap: 16px;
     margin-bottom: 24px;
+    @include breakpoint($lg) {
+      flex-basis: 296px;
+      margin: 0;
+      display: flex;
+      gap: 50px;
+    }
+    @include breakpoint($x-lg) {
+      gap: 143px;
+    }
+  }
+
+  &__link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &:first-child {
+      margin-bottom: 16px;
+      @include breakpoint($lg) {
+        margin: 0;
+      }
+    }
+    @include breakpoint($lg) {
+      gap: 12px;
+    }
   }
 
   &__link {
@@ -38,10 +88,14 @@
   }
 
   &__socials {
-    max-width: 120px;
+    width: 120px;
     margin: 24px auto;
     display: flex;
     justify-content: space-between;
+    @include breakpoint($lg) {
+      margin: 0;
+      margin-left: 45px;
+    }
   }
 
   &__social {
@@ -68,5 +122,10 @@
     text-align: center;
     font-size: rem(11.1304px);
     line-height: 17px;
+    @include breakpoint($lg) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
   }
 }

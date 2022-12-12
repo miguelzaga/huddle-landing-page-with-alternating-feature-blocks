@@ -28,7 +28,6 @@ function App() {
                 voice, but so does your audience. Create connections with your
                 users as you engage in genuine discussion.
               </p>
-              Introduction to Algorithms by Thomas H. Cormen
               <button className="hero__btn btn">Get Started For Free</button>
             </div>
             <img
@@ -153,37 +152,40 @@ function App() {
             </ul>
 
             <ul className="footer__links">
-              <li>
-                <a className="footer__link" href="#">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a className="footer__link" href="#">
-                  What We Do
-                </a>
-              </li>
-              <li>
-                <a className="footer__link" href="#">
-                  FAQ
-                </a>
-              </li>
-
-              <li>
-                <a className="footer__link" href="#">
-                  Career
-                </a>
-              </li>
-              <li>
-                <a className="footer__link" href="#">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a className="footer__link" href="#">
-                  Contact Us
-                </a>
-              </li>
+              <div className="footer__link-list">
+                <li>
+                  <a className="footer__link" href="#">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a className="footer__link" href="#">
+                    What We Do
+                  </a>
+                </li>
+                <li>
+                  <a className="footer__link" href="#">
+                    FAQ
+                  </a>
+                </li>
+              </div>
+              <div className="footer__link-list">
+                <li>
+                  <a className="footer__link" href="#">
+                    Career
+                  </a>
+                </li>
+                <li>
+                  <a className="footer__link" href="#">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a className="footer__link" href="#">
+                    Contact Us
+                  </a>
+                </li>
+              </div>
             </ul>
 
             <ul className="footer__socials">
