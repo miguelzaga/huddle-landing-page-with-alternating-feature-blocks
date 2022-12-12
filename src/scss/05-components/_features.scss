@@ -5,6 +5,11 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin: auto;
+  max-width: calc(1232px + 40px);
+  @include breakpoint($lg) {
+    padding-top: 160px;
+  }
 
   &__card {
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
@@ -13,25 +18,51 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 520px;
+    margin: auto;
     gap: 24px;
+    @include breakpoint($lg) {
+      flex-direction: row;
+      max-width: unset;
+      height: 440px;
+      padding-left: 120px;
+      padding-right: 30px;
+      text-align: left;
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+    }
   }
 
   &__container {
+    flex-basis: 45%;
     &--users {
       padding-left: 5px;
       padding-right: 5px;
     }
   }
 
+  &__img {
+    max-width: 440px;
+  }
+
   &__title {
     font-size: rem(20px);
     line-height: 1.5;
     margin-bottom: 16px;
+    @include breakpoint($lg) {
+      font-size: rem(28px);
+    }
   }
 
   &__text {
     font-size: rem(14px);
     line-height: 1.5;
     color: $grayishBlue;
+    @include breakpoint($lg) {
+      font-size: rem(18px);
+    }
   }
 }
