@@ -9,6 +9,7 @@
   max-width: calc(1232px + 40px);
   @include breakpoint($lg) {
     padding-top: 160px;
+    padding-bottom: calc(344px - 280px);
   }
 
   &__card {

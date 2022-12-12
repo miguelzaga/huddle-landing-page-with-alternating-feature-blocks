@@ -28,7 +28,7 @@ function App() {
                 voice, but so does your audience. Create connections with your
                 users as you engage in genuine discussion.
               </p>
-
+              Introduction to Algorithms by Thomas H. Cormen
               <button className="hero__btn btn">Get Started For Free</button>
             </div>
             <img
@@ -91,8 +91,10 @@ function App() {
           </article>
         </section>
         <section className="cta">
-          <h2 className="cta__title">Ready To Build Your Community?</h2>
-          <button className="cta__btn btn">Get Started For Free</button>
+          <div className="cta__container">
+            <h2 className="cta__title">Ready To Build Your Community?</h2>
+            <button className="cta__btn btn">Get Started For Free</button>
+          </div>
         </section>
       </main>
       <div className="bg-alt">

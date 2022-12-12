@@ -1,19 +1,36 @@
 @use "./../01-abstracts/" as *;
 
 .cta {
-  background-color: white;
-  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
-  border-radius: 15px;
-  margin: 0 12px;
-  padding: 41px 12px;
+  padding: 0 12px;
   position: relative;
   top: 68px;
+  @include breakpoint($lg) {
+    top: 96px;
+  }
+
+  &__container {
+    background-color: white;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+    border-radius: 15px;
+    padding: 41px 12px;
+    max-width: 520px;
+    margin: auto;
+    @include breakpoint($lg) {
+      padding: 56px 12px 52px;
+      max-width: 800px;
+    }
+  }
 
   &__title {
     font-size: rem(18px);
     line-height: 1.67;
     text-align: center;
     margin-bottom: 24px;
+    @include breakpoint($lg) {
+      font-size: rem(32px);
+      line-height: rem(60px);
+      margin-bottom: 32px;
+    }
   }
 
   &__btn {
@@ -21,5 +38,12 @@
     line-height: 1.5;
     max-width: 200px;
     margin: auto;
+    @include breakpoint($lg) {
+      max-width: 400px;
+      height: 80px;
+      border-radius: 80px;
+      box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.223053);
+      font-size: rem(20px);
+    }
   }
 }
