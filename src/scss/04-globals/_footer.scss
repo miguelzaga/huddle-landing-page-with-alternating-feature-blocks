@@ -27,6 +27,7 @@
     @include breakpoint($lg) {
       flex-direction: row;
       gap: 50px;
+      height: 155px;
     }
     @include breakpoint($x-lg) {
       gap: 130px;
@@ -55,29 +56,17 @@
   &__links {
     line-height: 1.93;
     margin-bottom: 24px;
+    display: grid;
+    gap: 16px;
     @include breakpoint($lg) {
       flex-basis: 296px;
       margin: 0;
-      display: flex;
-      gap: 50px;
+      grid-template-columns: repeat(2, 82px);
+      grid-template-rows: repeat(3, 27px);
+      grid-auto-flow: column;
+      gap: 12px 143px;
     }
     @include breakpoint($x-lg) {
-      gap: 143px;
-    }
-  }
-
-  &__link-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    &:first-child {
-      margin-bottom: 16px;
-      @include breakpoint($lg) {
-        margin: 0;
-      }
-    }
-    @include breakpoint($lg) {
-      gap: 12px;
     }
   }
 
@@ -123,6 +112,7 @@
     font-size: rem(11.1304px);
     line-height: 17px;
     @include breakpoint($lg) {
+      font-size: rem(12px);
       position: absolute;
       bottom: 0;
       right: 0;
